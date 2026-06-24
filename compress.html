@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PDF Tools Pro - Free Online PDF Converter, Merge & Compress</title>
-  <link rel="stylesheet" href="css/style.css">
+    <title>Compress PDF</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="loader" class="loader hidden">
-  <div class="spinner"></div>
-  <p>Processing...</p>
+    <div class="spinner"></div>
+    <p>Processing...</p>
 </div>
 
 <div class="container">
 
-  <h1>Compress PDF</h1>
+    <h1>Compress PDF</h1>
 
-  <input type="file" id="file">
+    <input type="file" id="file">
 
-  <button onclick="compressPDF()">Compress PDF</button>
+    <br><br>
 
-  <br>
-  <a href="index.html">← Back</a>
+    <button onclick="compressPDF()">Compress PDF</button>
+
+    <br><br>
+
+    <a href="index.html">← Back</a>
 
 </div>
 
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>
