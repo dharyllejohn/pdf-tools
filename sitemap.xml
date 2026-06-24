@@ -3,25 +3,25 @@
 
   <!-- Main page -->
   <url>
-    <loc>https://dharyllejohn.github.io/pdf-tools/</loc>
+    <loc>https://daryljohn.github.io/pdf-tools/</loc>
     <priority>1.0</priority>
   </url>
 
   <!-- Image to PDF -->
   <url>
-    <loc>https://dharyllejohn.github.io/pdf-tools/image-to-pdf.html</loc>
+    <loc>https://daryljohn.github.io/pdf-tools/image-to-pdf.html</loc>
     <priority>0.9</priority>
   </url>
 
   <!-- JPG to PDF -->
   <url>
-    <loc>https://dharyllejohn.github.io/pdf-tools/jpg-to-pdf.html</loc>
+    <loc>https://daryljohn.github.io/pdf-tools/jpg-to-pdf.html</loc>
     <priority>0.9</priority>
   </url>
 
   <!-- PDF to Text -->
   <url>
-    <loc>https://dharyllejohn.github.io/pdf-tools/pdf-to-text.html</loc>
+    <loc>https://daryljohn.github.io/pdf-tools/pdf-to-text.html</loc>
     <priority>0.9</priority>
   </url>
 
