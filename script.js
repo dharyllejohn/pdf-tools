@@ -189,3 +189,70 @@ async function compressPDF() {
         hideLoader();
     }
 }
+async function imageToPDF() {
+
+    const file = document.getElementById("imageFile").files[0];
+
+    if (!file) {
+        alert("Select an image first.");
+        return;
+    }
+
+    showLoader();
+
+    const { jsPDF } = window.jspdf;
+
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+
+        const pdf = new jsPDF();
+
+        pdf.addImage(e.target.result, "JPEG", 10, 10, 180, 120);
+
+        const blob = pdf.output("blob");
+        const url = URL.createObjectURL(blob);
+
+        saveToHistory("Image to PDF", url);
+
+        pdf.save("image.pdf");
+
+        hideLoader();
+    };
+
+    reader.readAsDataURL(file);
+}
+
+async function jpgToPDF() {
+
+    const file = document.getElementById("jpgFile").files[0];
+
+    if (!file) {
+        alert("Select a JPG file first.");
+        return;
+    }
+
+    showLoader();
+
+    const { jsPDF } = window.jspdf;
+
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+
+        const pdf = new jsPDF();
+
+        pdf.addImage(e.target.result, "JPEG", 10, 10, 180, 120);
+
+        const blob = pdf.output("blob");
+        const url = URL.createObjectURL(blob);
+
+        saveToHistory("JPG to PDF", url);
+
+        pdf.save("jpg.pdf");
+
+        hideLoader();
+    };
+
+    reader.readAsDataURL(file);
+}
