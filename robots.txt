@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daryljohn.github.io/pdf-tools/sitemap.xml
