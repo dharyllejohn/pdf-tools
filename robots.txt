@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dharyllejohn.github.io/pdf-tools/sitemap.xml
+Sitemap: https://pdf-tools-one-iota.vercel.app/sitemap.xml
